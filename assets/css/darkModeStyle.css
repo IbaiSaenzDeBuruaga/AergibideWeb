@@ -1,0 +1,765 @@
+body {
+    background-color: #1F1F1F; /* Fondo oscuro general */
+    color: #FFFFFF; /* Texto blanco puro */
+
+}
+
+/* Header */
+.header {
+    background-color: #162F3B; /* Fondo oscuro del header */
+
+}
+
+
+
+.barra-busq {
+    background-color: #333333; /* Fondo de la barra de búsqueda */
+    border: 1px solid #666666; /* Borde oscuro */
+    color: #FFFFFF; /* Texto blanco puro */
+}
+
+
+
+#btnFiltro {
+    background-color: transparent;
+}
+
+#btnFiltro:hover {
+    background-color: #333333; /* Fondo más oscuro al pasar el cursor */
+}
+
+
+
+.iconos {
+    color: #4DBAD9; /* Color azul claro para los iconos */
+}
+
+
+
+/* Main */
+
+
+
+
+.tema {
+    background-color: transparent;
+    border-bottom: 2px solid #4DBAD9; /* Color de la línea inferior */
+
+}
+
+.sidebar {
+    background-color: #1A1A1A; /* Puede mantenerse igual o cambiar a otro color si lo deseas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Paginación */
+
+
+/* Footer */
+footer {
+    background-color: #162F3B; /* Fondo oscuro del footer */
+}
+
+footer span {
+    color: #4DBAD9; /* Color azul claro para el texto */
+}
+
+
+
+/* Últimas Publicaciones */
+.ultimas-publicaciones h3 {
+    color: #FFFFFF; /* Texto blanco para las últimas publicaciones */
+}
+
+.texto p {
+    color: #FFFFFF; /* Texto blanco para las publicaciones */
+}
+
+.estadisticas {
+    color: #FFFFFF; /* Texto blanco para las estadísticas */
+}
+
+/* Tabla de Datos */
+
+
+.estiloTabla {
+    background-color: #333333; /* Fondo de la tabla */
+}
+
+.estiloTabla tr {
+    border-bottom: 0.09375em solid #4DBAD9; /* Color de la línea inferior */
+}
+
+
+.diseñoBoton {
+    background-color: #4DBAD9;
+    color: black;
+}
+
+.botonPassword {
+    background-color: #4DBAD9;
+    color: black;
+}
+
+.botonPassword:hover {
+    background-color: #4DBAD9;
+    color: black;
+}
+
+/* Cambiar contraseña */
+
+/* Panel Lateral */
+.panelLateral {
+    background-color: #162F3B; /* Mantén el color de la barra lateral o ajusta si lo deseas */
+}
+
+
+
+.panelLateral a {
+    color: white; /* Texto blanco para los enlaces */
+}
+
+.lateralBoton.active {
+    background-color: #4DBAD9;
+    color: black;
+}
+
+/* Botones de Paginación */
+.page-btn {
+    background-color: #4DBAD9; /* Color de los botones de paginación */
+    color: white;
+}
+
+.page-btn.active {
+    background-color: #379BB3; /* Color de botón activo */
+}
+
+.page-btn:hover {
+    background-color: #379BB3; /* Color al pasar el cursor */
+}
+
+.iconosDark {
+    color: #4DBAD9; /* Color azul claro para los iconos oscuros */
+}
+
+
+a:hover {
+    color: #4DBAD9; /* Color azul claro al pasar el cursor */
+}
+
+/* Estilos para el menú desplegable */
+.dropdown-content {
+    background-color: #1A1A1A;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-content a {
+    color: white;
+}
+
+.dropdown-content a:hover {
+    background-color: #4DBAD9;
+}
+
+
+#filtroMenu {
+    background-color: #1A1A1A; /* Fondo negro */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Sombra más intensa */
+}
+
+#filtroMenu label {
+    color: #ffffff; /* Color de texto blanco */
+}
+
+#filtroMenu input {
+    accent-color: #4DBAD9;
+}
+
+/* Opcional: Cambiar el color del texto al pasar el mouse */
+#filtroMenu label:hover {
+    color: #4DBAD9; /* Cambiar a un color azul al pasar el mouse */
+}
+
+.content {
+    padding: 0 5%; /* Padding horizontal del 5% */
+}
+
+h2 {
+    margin-bottom: 10px; /* Espacio debajo del título */
+}
+
+ul {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    padding: 0; /* Elimina el padding por defecto */
+}
+
+li {
+    margin-bottom: 20px; /* Espacio entre cada elemento de la lista */
+    border-bottom: 1px solid #4DBAD9;
+    padding: 15px; /* Padding interno del elemento */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #1A1A1A; /* Fondo claro */
+}
+
+strong {
+    font-size: 1.2em; /* Tamaño de fuente del título */
+    display: block; /* Hace que el título ocupe toda la línea */
+}
+
+.resultado-detalles {
+    display: flex; /* Usamos flexbox para alinear los elementos */
+    justify-content: space-between; /* Distribuye el espacio entre los elementos */
+    align-items: flex-start; /* Alinea los elementos al inicio */
+    margin-top: 10px; /* Espacio arriba del bloque de detalles */
+}
+
+.izquierda {
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+
+.derecha {
+    text-align: right; /* Alinea el texto a la derecha */
+}
+
+
+
+
+
+
+/*PREGUNTA Y RESPUESTA*/
+
+.contenedorPreguntasYRespuestas
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedorPregunta {
+
+    width: 100%;
+    display: grid;
+    grid-template-columns: 200px 4fr 4fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+    gap: 10px;
+    padding: 20px;
+    /*box-sizing: border-box;*/
+    grid-template-areas:
+        "fotoUsuarioPregunta preguntaTitulo preguntaTitulo ."
+        ". descripcionPregunta descripcionPregunta ."
+        ". panelDeBotones panelDeBotones .";
+}
+
+.fotoUsuarioPregunta {
+    grid-area: fotoUsuarioPregunta;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.fotoUsuarioPregunta img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.preguntaTitulo {
+    background-color: #1A1A1A;
+    grid-area: preguntaTitulo;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    justify-content: space-between;
+}
+
+.descripcionPregunta {
+    background-color: #1A1A1A;
+    grid-area: descripcionPregunta;
+    padding: 10px;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.panelDeBotones {
+    grid-area: panelDeBotones;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px;
+}
+.panelDeBotonesPregunta {
+    grid-area: panelDeBotones;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px;
+    border-left: 1px dashed #ffffff;
+}
+
+.panel-botones button{
+    border: 0;
+}
+
+
+.panelDeBotones .bi {
+    font-size: 24px;
+    border: 0;
+}
+
+
+.bi-lg {
+    font-size: 1.5rem;
+}
+
+.bi-xl {
+    font-size: 2rem;
+}
+
+
+.airplane-down {
+    display: inline-block !important;
+    transform: rotate(180deg) !important;
+    transition: transform 0.2s;
+}
+
+
+
+.botonPanel
+{
+    background-color: #1F1F1F;
+    border: 0px;
+    padding: .5em;
+}
+
+.panelDeBotones .bi {
+    color: #4dabf7;
+    transition: color 0.2s ease;
+}
+.panelDeBotones .bi:hover {
+    color: #ffffff;
+    cursor: pointer;
+}
+
+
+
+.contenedorRespuestaDivididor {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 100px 4.75fr 1fr; /* Mantenemos las columnas originales */
+    grid-template-rows: auto 1fr auto;
+    gap: 10px;
+    padding: 20px;
+    grid-template-areas:
+        ". fotoUsuarioRespuesta respuesta ."
+        ". . respuesta ."
+        ". . panelDeBotones .";
+    position: relative; /* Añadimos posición relativa para poder posicionar la estrella */
+}
+
+.respuesta {
+    grid-area: respuesta;
+    padding: 10px;
+    font-size: 1rem;
+    line-height: 1.5;
+    background-color: #1A1A1A;
+    position: relative; /* Para el posicionamiento de la estrella */
+}
+
+.estrella-respuesta {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1;
+}
+
+.estrella-respuesta .bi-star {
+    color: #4dabf7;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.estrella-respuesta .bi-star:hover {
+    color: #ffffff;
+}
+
+
+.fotoUsuarioRespuesta
+{
+    grid-area: fotoUsuarioRespuesta;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.fotoUsuarioRespuesta img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+
+
+
+
+.imagenRespuesta {
+    max-width: 300px; /* Ancho máximo fijo */
+    height: auto; /* Mantiene la proporción */
+    display: block; /* Permite que otros elementos se alineen */
+    align-items: center;
+}
+
+.publicarRespuestaContenido
+{
+    grid-area: respuesta;
+    padding: 10px;
+    font-size: 1rem;
+    line-height: 1.5;
+    background-color: #1A1A1A;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em ;
+}
+.textAreaRespuesta
+{
+    font-family: Mulish-Regular, Arial, sans-serif;
+    border: 0;
+    color: #FFFFFF;
+    background-color: #1A1A1A;
+    width: 100%; height:60%;
+    padding: 2em;
+    border: .15em solid #4DBAD9;
+    border-radius: .5em;
+}
+
+.botonSubirArchivo
+{
+
+    text-align: center;
+    padding: .5em;
+    border: #4DBAD9 solid .1em;
+    border-radius: .5em;
+    width: 50%;
+}
+
+.botonSubirArchivo:hover
+{
+    cursor: pointer;
+    background-color: #4DBAD9;
+    text-align: center;
+    padding: .5em;
+    border: #4DBAD9 solid .1em;
+    border-radius: .5em;
+    width: 50%;
+    color: #FFFFFF;
+}
+
+
+.botonGuardarRespuesta
+{
+
+    text-align: center;
+    padding: .75em;
+    border: #4DBAD9 solid .1em;
+    border-radius: .5em;
+    width: 50%;
+    background-color: #1A1A1A;
+    color: #FFFFFF;
+}
+
+.botonGuardarRespuesta:hover
+{
+    cursor: pointer;
+    background-color: #4DBAD9;
+    text-align: center;
+    padding: .75em;
+    border: #4DBAD9 solid .1em;
+    border-radius: .5em;
+    width: 50%;
+    color: #FFFFFF;
+}
+.botonCancelarRespuesta
+{
+    text-align: center;
+    padding: .75em;
+    border: #e51816 solid .1em;
+    border-radius: .5em;
+    width: 50%;
+    background-color: #1A1A1A;
+    color: #e51816;
+}
+.botonCancelarRespuesta:hover
+{
+    cursor: pointer;
+    background-color: #e51816;
+    text-align: center;
+    padding: .75em;
+    border: #4DBAD9 solid .1em;
+    border-radius: .5em;
+    width: 50%;
+    color: #FFFFFF;
+}
+/* Chat area */
+.chat-area {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #1A1A1A;
+}
+
+/* Users sidebar */
+.users-sidebar {
+    width: 280px;
+    border-right: 1px solid #3c4043;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-header {
+    padding: 16px;
+    border-bottom: 1px solid #3c4043;
+}
+
+.sidebar-header h2 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #e8eaed;
+}
+
+.users-list {
+    overflow-y: auto;
+    flex-grow: 1;
+}
+
+.user-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    color: #e8eaed;
+}
+
+.user-item:hover {
+    background-color: #3c4043;
+}
+
+.user-item.active {
+    background-color: #34373a;
+}
+
+
+
+/* Chat area */
+.chat-area {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-header {
+    padding: 16px;
+    border-bottom: 1px solid #3c4043;
+    display: flex;
+    align-items: center;
+}
+
+.chat-header .user-avatar {
+    margin-right: 12px;
+}
+
+.chat-header h2 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #e8eaed;
+}
+
+#msgBox {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.message {
+    max-width: 70%;
+    margin-bottom: 8px;
+    padding: 12px 16px;
+    border-radius: 18px;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.message.received {
+    align-self: flex-start;
+    background-color: #3c4043;
+    color: #e8eaed;
+}
+
+.message.sent {
+    align-self: flex-end;
+    background-color: #4DBAD9;
+    color: #202124;
+}
+
+.message-time {
+    font-size: 11px;
+    margin-top: 4px;
+    opacity: 0.7;
+}
+
+.message-day {
+    text-align: center;
+    font-size: 12px;
+    color: #9aa0a6;
+    margin: 16px 0;
+    position: relative;
+}
+
+.message-day::before,
+.message-day::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 42%;
+    height: 1px;
+    background-color: #3c4043;
+}
+
+.message-day::before {
+    left: 0;
+}
+
+.message-day::after {
+    right: 0;
+}
+
+.user-panel {
+    padding: 16px;
+    border-top: 1px solid #3c4043;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+#message {
+    flex-grow: 1;
+    padding: 12px;
+    border: 1px solid #3c4043;
+    border-radius: 24px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    background-color: #202124;
+    color: #e8eaed;
+}
+
+#message:focus {
+    border-color: #4DBAD9;
+    box-shadow: 0 0 0 2px rgba(77, 186, 217, 0.2);
+}
+
+#send-message {
+    background-color: #4DBAD9;
+    color: #202124;
+    border: none;
+    border-radius: 24px;
+    padding: 12px 24px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#send-message:hover {
+    background-color: #3da8c7;
+}
+
+/* Utility classes */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #202124;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #3c4043;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #5f6368;
+}
+
+
+#notificationsDropdown {
+    background-color: #1A1A1A;
+    color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+}
+
+#notificationsDropdown .notificacion-form {
+    border-bottom: 1px solid #ddd;
+}
+
+
+#notificationsDropdown .notificacion-item:hover {
+    background-color: #4DBAD9;
+    color: white; /* Cambia el color del texto al hacer hover */
+}
+
+#notificationsDropdown a {
+    color: white;
+
+}
+
+#notificationsDropdown .notificacion-item {
+    color: white;
+}
+
+
+/* Estilo para el botón "Marcar todas como leídas" */
+#marcarTodasLeidasBtn {
+
+    background-color: #1A1A1A;
+    color: white;
+
+}
+
+#marcarTodasLeidasBtn:hover {
+    background-color: #4DBAD9;
+}
+
+#marcarTodasLeidasBtn:active {
+    background-color: #4DBAD9;
+}
+.temas-titulo {
+
+    color: white;
+}
+
+.tituloPregunta{
+    color: white;
+}

@@ -1,0 +1,174 @@
+@font-face {
+    /*Fuente del tipo de letra regular*/
+    font-family: Mulish-Regular;
+    src: url("../fonts/Mulish/static/Mulish-Regular.ttf");
+}
+
+@font-face {
+    font-family: Mulish-Bold;
+    src: url("../fonts/Mulish/static/Mulish-Bold.ttf");
+    font-weight: bold;
+}
+
+strong{
+    font-family: Mulish-Bold;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Mulish-Regular;
+}
+
+.container{
+    width: 100%;
+}
+
+.contenedorListaPreguntas{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.listaPreguntas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    width: 60%;
+    margin-top: 3em;
+}
+
+.tituloPregunta{
+    color: black;
+    text-decoration: none;
+}
+
+.tituloPregunta:hover{
+    text-decoration: underline;
+    color: #4DBAD9;
+}
+
+.encabezado{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.encabezado h1{
+    font-size: 30px;
+}
+
+.btn{
+    background-color: transparent;
+    font-size: 15px !important;
+    text-decoration: none;
+    padding: .5em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btnCrear{
+    border: 2px solid #4DBAD9;
+    color: #4DBAD9;
+    
+
+}
+
+.btnForm{
+    width: 8% !important;
+    padding: .5em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btnImagen{
+    cursor: pointer;
+    border: 2px solid #4DBAD9;
+    color: #4DBAD9;
+    width: 100  ;
+}
+
+/* Asegurarse de que el input file esté oculto */
+input[type="file"] {
+    display: none;
+}
+
+.btnCrear:hover{
+    background-color: #4DBAD9;
+    color: white;
+}
+
+.btnCancel{
+    border: 2px solid #dc3545;
+    color: #dc3545;
+}
+
+.btnCancel:hover{
+    background-color: #dc3545;
+    color: white;
+}
+
+.pregunta{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #4DBAD9;
+    width: 100%;
+}
+
+.pregunta p{
+    font-size: 25px;
+}
+
+.datos-pregunta{
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+}
+
+.contenedorForm{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.crearPregunta{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    margin-top: 3em;
+}
+
+.crearPregunta h1{
+    font-size: 30px;
+    width: 100%;
+}
+
+.formPregunta{
+    width: 100%;
+    margin-top: 1.5em;
+}
+
+.formPregunta input, .formPregunta textarea{
+    width: 100%;
+    font-size: 15px;
+}
+
+.formPregunta select{
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.formPregunta label{
+    font-size: 20px;
+}
+
+textarea{
+    resize: none;
+    height: 10em;
+}
+
